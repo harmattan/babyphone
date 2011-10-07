@@ -1,0 +1,93 @@
+                                  Babyphone
+                               ---------------
+
+                      Copyright (C) 2011  Roman Morawek
+                               maemo@morawek.at
+                      http://babyphone.garage.maemo.org
+
+
+Overview
+--------
+
+Babyphone is a baby monitoring application that measures the audio
+noise level. If a configurable threshold is exceeded it calls a
+predefined phone number (the parents).
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 3 of the license, or
+(at your option) any later version.
+
+
+Features
+--------
+
+- measures audio level using the built in microphone
+- allows setting of threshold for audio volume and duration for triggering
+- establishes a voice call to the predefined number on such event
+- incoming calls are rejected during monitoring (to not wake up the baby)
+- automatically answer incoming call from parents
+- inform about missed calls (per SMS) or forward them to parents phone
+- use address book for phone number lookup
+
+Planned upcoming features, not implemented yet:
+- adaptive self-configuration of audio thresholds
+- ...
+
+
+Supported Systems
+-----------------
+
+The application runs on Maemo 5 PR 1.2 or later and MeeGo Harmattan (Maemo 6).
+Therefore it supports the Nokia N900, Nokia N950 and Nokia N9 devices.
+
+Since the development is done using Qt porting the application to other Qt
+platforms like Symbian should be possible.
+
+
+Installation
+------------
+
+The installation follows the usual sequence of Maemo devices. It will be part
+of the community repository.
+
+
+Usage
+-----
+
+After you start the application you must configure the parents phone number.
+This phone number will be called in case of loud environment.
+
+You may want to adjust the other parameters. Most important is:
+- Audio Amplification: If you increase this value the babyphone will be more
+  sensitive to the audio level, which means it will call earlier.
+- Time Influence: If you increase this value the loud audio noise needs to be
+  present for a longer time. Therefore a higher value makes the babyphone less
+  sensitive.
+
+The two graphs on the main screen help you to adjust these audio settings.
+The upper graph displays the audio level. Everytime you see a red line the
+threshold is exceeded.
+However, the phone does not call the parents already at the first loud audio
+sample. The noise need to be present for some time. This is reflected by the
+bottom graph. The counter value is increased on loud noise and decreased if it
+is silent. As the gray threshold line gets exceeded the parents will be called.
+
+After setting all values you need to go back to the first tab and click the
+button at the bottom. The text will change and indicate the active status.
+
+As the babyphone established a phone call at high audio volume, you can take
+the call to hear your baby. As you finish the call the babyphone application
+gets active again after the timeout specified in the "Phone Recall Timer"
+settings. The phone will call you then again as the noise level gets above the
+threshold.
+
+You can obtain further and up-to-date information at the application website:
+http://babyphone.garage.maemo.org
+
+
+Credits
+-------
+
+Thanks to the Tango Desktop Project for providing the application icon.
+http://tango.freedesktop.org/Tango_Desktop_Project

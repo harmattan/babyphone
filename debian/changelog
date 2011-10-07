@@ -1,0 +1,135 @@
+babyphone (2.0.7) stable; urgency=low
+
+  * no functional change; rebuild to force COBS update
+
+ -- Roman Morawek <maemo@morawek.at>  Thu, 07 Oct 2011 15:37:57 +0000
+
+babyphone (2.0-6) stable; urgency=low
+
+  * remove German translation from control file
+
+ -- Roman Morawek <maemo@morawek.at>  Thu, 06 Oct 2011 22:37:57 +0000
+
+babyphone (2.0-5) stable; urgency=low
+
+  * fix wrong path in aegis file which prevents phone calls
+
+ -- Roman Morawek <maemo@morawek.at>  Wed, 17 Aug 2011 21:37:57 +0000
+  
+babyphone (2.0-4) stable; urgency=low
+
+  * use 64x64 pixel image in control file for harmattan
+  * remove aegis-builder control dependency in harmattan
+  * change about icon in harmattan
+  * remove close button in harmattan
+  * add audio settings also to main screen in harmattan
+  * add help to harmattan settings screen
+  * rescale audio duration settings to make smaller values possible
+  * update homepage
+
+ -- Roman Morawek <maemo@morawek.at>  Sun, 14 Aug 2011 02:37:57 +0000
+
+babyphone (2.0-3) unstable; urgency=low
+
+
+  * change harmattan application icon
+
+ -- Roman Morawek <maemo@morawek.at>  Mon, 4 Aug 2011 20:37:57 +0000
+
+babyphone (2.0-2) unstable; urgency=low
+
+  * add aegis security framework handling for COBS
+
+ -- Roman Morawek <maemo@morawek.at>  Mon, 2 Aug 2011 22:53:57 +0000
+
+babyphone (2.0-1) unstable; urgency=low
+
+  * fix application path for desktop icon
+
+ -- Roman Morawek <maemo@morawek.at>  Mon, 1 Aug 2011 12:53:57 +0000
+
+babyphone (2.0-0) unstable; urgency=low
+
+  * support MeeGo/Harmattan OS
+
+ -- Roman Morawek <maemo@morawek.at>  Thu, 25 Jul 2011 00:00:00 +0000
+
+babyphone (1.2-1) stable; urgency=low
+
+  * fix bug 6654, audio connection not established on notification
+  * provide setting to disable screen auto rotation
+
+ -- Roman Morawek <maemo@morawek.at>  Thu, 12 May 2011 00:00:00 +0000
+
+babyphone (1.1-2) stable; urgency=low
+
+  * support auto-rotation of screen orientation
+  * display notification call statistics
+
+ -- Roman Morawek <maemo@morawek.at>  Thu, 16 Apr 2011 22:30:00 +0000
+
+babyphone (1.0-1) stable; urgency=low
+
+  * add contact selection from address book
+  * add possibility to invoke script instead of phone call
+  * more flexible phone number matching to determine parent's incoming call
+  * better checking for valid phone number before activation
+  * remove user setting to disable graph while locked (but keep it in config files)
+  * bugfix: use white graph background (was black since PR1.3)
+  * perform some code restructuring
+
+ -- Roman Morawek <maemo@morawek.at>  Wed, 05 Nov 2010 21:00:00 +0000
+
+babyphone (0.2-5) unstable; urgency=low
+
+  * adjust debian rule file to work with new MADDE of PR1.3
+  * no functional change in the application
+
+ -- Roman Morawek <maemo@morawek.at>  Wed, 03 Nov 2010 22:00:00 +0000
+
+babyphone (0.2-4) unstable; urgency=low
+
+  * text change in GUI label
+
+ -- Roman Morawek <maemo@morawek.at>  Mon, 09 Aug 2010 16:30:00 +0000
+
+babyphone (0.2-3) unstable; urgency=low
+
+  * notify SMS is also possible if incoming calls are not rejected
+  * redesign of settings dialog
+  * add help to settings dialog
+  * show information on battery usage at first run
+  * stop GUI update while screen blanked to save battery
+
+ -- Roman Morawek <maemo@morawek.at>  Sat, 07 Aug 2010 02:00:00 +0000
+
+babyphone (0.2-2) unstable; urgency=low
+
+  * Correct previous false build
+
+ -- Roman Morawek <maemo@morawek.at>  Fri, 06 Aug 2010 01:00:00 +0000
+
+babyphone (0.2-1) unstable; urgency=low
+
+  * Optioally send SMS on rejected phone calls
+  * Answer phone calls from parents
+  * Switch profile to silent while running
+  * Add activation delay
+  * Optionally disable graphs while active
+  * Finar granularity in audio levels
+
+ -- Roman Morawek <maemo@morawek.at>  Thu, 05 Aug 2010 23:00:00 +0000
+
+babyphone (0.1-2) unstable; urgency=low
+
+  * Restructuring and redesign of user interface
+  * Check phone number before activation
+  * inhibit "hangup" by pending notification box that waits for user commit
+
+ -- Roman Morawek <maemo@morawek.at>  Mon, 07 Jun 2010 01:42:45 +0000
+
+babyphone (0.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Roman Morawek <maemo@morawek.at>  Thu, 03 Jun 2010 00:42:45 +0000
